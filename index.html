@@ -7,14 +7,14 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="is-home">
-	<div class="page-wrapper">
+	<div class="page__wrapper">
 		<div class="content-wrapper">
-			<header class="page-header">
-				<div class="page-header__container">
-					<div class="page-header__logo">
+			<header class="page__header">
+				<div class="page__header__container">
+					<div class="page__header__logo">
 						<img src="img/logo.png" alt="Магазин Глейси">
 					</div>
-					<nav class="page-header__nav">
+					<nav class="page__header__nav">
 						<div class="nav__left">
 							<ul class="nav__menu">
 								<li class="nav__item"><a href="#" class="nav__link">Каталог</a>
@@ -38,9 +38,9 @@
 							</div>
 							<div class="nav__user">
 								<form class="nav__user-popup hidden">
-									<input type "email" placeholder="Электронная почта" autocomplete="on" tabindex="1" autofocus/>
-									<input type="password" placeholder="Пароль" autocomplete="on" tabindex="2" autofocus/>
-									<buttom>Войти</buttom>
+									<input type="text" placeholder="Электронная почта" autocomplete="on" tabindex="1" autofocus/>
+									<input type="password" placeholder="Пароль" autocomplete="on" tabindex="2"/>
+									<input type="submit" value="Войти">
 									<a href="#">Забыли пароль?</a>
 									<a href="#">Новая регистрация</a>
 								</form>
@@ -52,12 +52,12 @@
 						</div>
 					</nav>
 				</div>
-				<div class="page-header__phone">
+				<div class="page__header__phone">
 					<span>8 812 450-25-25 </span>
 				</div>
 			</header>
 			<main>
-				<section class="page-slider">
+				<section class="page__slider">
 					<div class="slider__slide" id="slide1">
 						<div class="slider__slide-title">Крем-брюле и пломбир с малиновым джемом</div>
 						<a class="btn__slide" href="#">Давайте оба!</a>
@@ -79,7 +79,7 @@
 						<label for="btn-3"></label>
 					</div>
 				</section>
-				<section class="page-banners">
+				<section class="page__banners">
 					<div class="banners__item">
 						<h2 class="banners__title">Малинка даром!</h2>
 						<p class="banners__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
@@ -93,7 +93,7 @@
 						<a class="btn__banners" href="#">Хочу шоколадки!</a>
 					</div>
 				</section>
-				<section class="page-hits">
+				<section class="page__hits">
 					  <div class="hits__item">
               <div class="hits__image">
                 <img src="./img/goods/hits/1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" >
@@ -123,6 +123,28 @@
               <p class="hits__text">Сливочное крем-брюле с карамельной подливкой</p>
             </div>
 				</section>
+				 <section class="seo">
+            <h2 class="seo__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+            <div class="seo__features">
+              <div class="seo__column">
+                <p class="seo__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                <p class="seo__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+              </div>
+              <div class="seo__column">
+                <p class="seo__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                <p class="seo__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              </div>
+            </div>
+          </section>
+          <section class="page__news">
+         			<span class="news__title">Новое в нашем блоге</span>
+              <h2 class="news__text">10 способов сервировки фруктовых щербетов к столу</h2>
+          </section>
+          <form class="page__subscribe" action="https://echo.htmlacademy.ru" method="post">
+          	<p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          	<input type="text" placeholder="Электронная почта" autocomplete="on" tabindex="1" autofocus/>
+          	<input type="submit" value="Отправить">
+          </form>
 			</main>
 		</div>
 	</div>
