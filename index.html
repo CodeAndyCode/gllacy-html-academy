@@ -14,10 +14,10 @@
 					<div class="page-header__logo">
 						<img src="img/logo.png" alt="Магазин Глейси">
 					</div>
-					<nav class="page-header__navigation">
-						<div class="navigation__left">
-							<ul class="navigation__menu">
-								<li class="navigation__item"><a href="#" class="navigation__link">Каталог</a>
+					<nav class="page-header__nav">
+						<div class="nav__left">
+							<ul class="nav__menu">
+								<li class="nav__item"><a href="#" class="nav__link">Каталог</a>
 									<ul class="submenu">
 										<li class="submenu__item"><a href="#" class="submenu__link">Новинки</a></li>
 										<li class="submenu__item"><a href="#" class="submenu__link">Сливочное</a></li>
@@ -26,18 +26,18 @@
 										<li class="submenu__item"><a href="#" class="submenu__link">Мелорин</a></li>
 									</ul>
 								</li>
-								<li class="navigation__item"><a href="#" class="navigation__link">Доставка и оплата</a></li>
-								<li class="navigation__item"><a href="#" class="navigation__link"></a>О Компании</li>
+								<li class="nav__item"><a href="#" class="nav__link">Доставка и оплата</a></li>
+								<li class="nav__item"><a href="#" class="nav__link"></a>О Компании</li>
 							</ul>
 						</div>
-						<div class="navigation__right">
-							<div class="navigation__search">
-								<form class="navigation__search-popup hidden">
+						<div class="nav__right">
+							<div class="nav__search">
+								<form class="nav__search-popup hidden">
 									<input type="search" autocomplete="off" name="search" placeholder="Что ищем?">
 								</form>
 							</div>
-							<div class="navigation__user">
-								<form class="navigation__user-popup hidden">
+							<div class="nav__user">
+								<form class="nav__user-popup hidden">
 									<input type "email" placeholder="Электронная почта" autocomplete="on" tabindex="1" autofocus/>
 									<input type="password" placeholder="Пароль" autocomplete="on" tabindex="2" autofocus/>
 									<buttom>Войти</buttom>
@@ -45,14 +45,85 @@
 									<a href="#">Новая регистрация</a>
 								</form>
 							</div>
-							<div class="navigation__basket">
-							<!-- Add popup window -->
+							<div class="nav__basket">
+								<!-- Add popup window -->
 								<a href="#">Пусто</a>
 							</div>
 						</div>
 					</nav>
 				</div>
+				<div class="page-header__phone">
+					<span>8 812 450-25-25 </span>
+				</div>
 			</header>
+			<main>
+				<section class="page-slider">
+					<div class="slider__slide" id="slide1">
+						<div class="slider__slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+						<a class="btn__slide" href="#">Давайте оба!</a>
+					</div>
+					<div class="slider__slide" id="slide2">
+						<div class="slider__slide-title">Шоколадный пломбир и лимонный сорбет</div>
+						<a class="btn__slide" href="#">Давайте оба!</a>
+					</div>
+					<div class="slider__slide" id="slide3">
+						<div class="slider__slide-title">Пломбир с помадкой<br>и клубничный щербет</div>
+						<a class="btn__slide" href="#">Давайте оба!</a>
+					</div>
+					<div class="slider-controls">
+						<input type="radio" id="btn-1" name="toggle" checked/>
+						<input type="radio" id="btn-2" name="toggle" />
+						<input type="radio" id="btn-3" name="toggle" />
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+				</section>
+				<section class="page-banners">
+					<div class="banners__item">
+						<h2 class="banners__title">Малинка даром!</h2>
+						<p class="banners__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+						</p>
+						<a class="btn__banners" href="#">Хочу варенье!</a>
+					</div>
+					<div class="banners__item">
+						<h2 class="banners__title">Шоколадки даром!</h2>
+						<p class="banners__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+						</p>
+						<a class="btn__banners" href="#">Хочу шоколадки!</a>
+					</div>
+				</section>
+				<section class="page-hits">
+					  <div class="hits__item">
+              <div class="hits__image">
+                <img src="./img/goods/hits/1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" >
+              </div>
+              <div class="hits__price"><span class="hits__price-text">310</span></div>
+              <p class="hits__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </div>
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="./img/goods/hits/2.jpg" width="267px" height="267px" alt="Сливочно-кофейное с кусочками шоколада">
+              </div>
+              <div class="hits__price"><span class="hits__price-text">380</span></div>
+              <p class="hits__text">Сливочно-кофейное с кусочками шоколада</p>
+            </div>
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="./img/goods/hits/3.jpg" width="267px" height="267px" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              </div>
+              <div class="hits__price"><span class="hits__price-text">355</span></div>
+              <p class="hits__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </div>
+            <div class="hits__item">
+              <div class="hits__image">
+                <img src="./img/goods/hits/4.jpg" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой">
+              </div>
+              <div class="hits__price"><span class="hits__price-text">415</span></div>
+              <p class="hits__text">Сливочное крем-брюле с карамельной подливкой</p>
+            </div>
+				</section>
+			</main>
 		</div>
 	</div>
 
